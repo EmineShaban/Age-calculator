@@ -1,0 +1,32 @@
+/* section{
+    position: relative;
+} */
+
+div.main {
+    background: lightgrey;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    min-width: 320px;
+    min-height: 250px;
+
+}
+
+div.main div {
+    margin: 25px;
+    display: flex;
+    flex-direction: column;
+    font-size: 23px;
+}
+
+div.main div label{
+margin-bottom: 15px;
+}
+
+
+div.main div input{
+    font-size: 17px;
+padding: 10px 20px;
+}
