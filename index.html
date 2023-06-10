@@ -1,45 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Age calculator app</title>
-<link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
+
 <body>
   <section>
 
-<div class="main">
-  <div class="day">
-    <label for="">Day</label>
-    <input type="number" name="" id="" placeholder="DD">
-  </div>
+    <div class="main">
 
-  <div class="month">
-    <label for="">Month</label>
-    <input type="number" name="" id="" placeholder="MM">
-  </div>
+      <div class="input">
 
-  <div class="year">
-    <label for="">Year</label>
-    <input type="number" name="" id="" placeholder="YYYY">
-  </div>
-</div>
+        <div class="day">
+          <label for="">Day</label>
+          <input type="number" name="" id="day" placeholder="DD" value="1" min="1" max="31">
+        </div>
+
+        <div class="month">
+          <label for="">Month</label>
+          <input type="number" name="" id="month" placeholder="MM" value="1" min="1" max="12">
+        </div>
+
+        <div class="year">
+          <label for="">Year</label>
+          <input type="number" name="" id="year" placeholder="YYYY" value="1900" max="2023">
+        </div>
+
+      </div>
 
 
-<!-- <div class="attribution">
+      <div class="btn">
+        <button onclick="onClick()">Enter</button>
+      </div>
+
+      <div class="result">
+        
+        <p class="year-result"><span>0</span> years</p>
+        <p class="month-result"><span>0</span> months</p>
+        <p class="days-result"><span>0</span> days</p>
+
+      </div>
+
+    </div>
+
+    <!-- <div class="attribution">
   Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
   Coded by <a href="#">Your Name Here</a>.
 </div> -->
-</section>
+  </section>
 
   <!-- Day
   DD
@@ -53,7 +80,9 @@
   -- years
   -- months
   -- days -->
-  
-  
+
+
 </body>
+<script src="index.js"></script>
+
 </html>
