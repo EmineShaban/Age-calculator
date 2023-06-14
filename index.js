@@ -36,10 +36,17 @@ function onClick() {
     let dayCurrent = 0
 
     if (dayToday > Number(day.value)) {
-        dayCurrent = dayToday - Number(day.value)
+        dayCurrent = dayToday - Number(day.value)  
+        console.log(dayToday)
+
         console.log(dayCurrent)
     } else if (dayToday < Number(day.value)) {
+        console.log(monthCurrent)
         monthCurrent -= 1
+        // monthToday-=1
+        // month.value -= 1
+        console.log(monthToday)
+
         console.log(monthCurrent)
         console.log(month.value)
 
@@ -49,11 +56,11 @@ function onClick() {
             dayCurrent = 31 - Number(day.value) + dayToday
             console.log(dayCurrent)
             console.log('12')
-        } else if (day31.includes(Number(monthCurrent))) {
+        } else if (day31.includes(Number(month.value -1 )) || month.value == 1) {
             dayCurrent = 31 - Number(day.value) + dayToday
             console.log(dayCurrent)
             console.log('31')
-        } else if (day30.includes(Number(monthCurrent))) {
+        } else if (day30.includes(Number(month.value -1))) {
             dayCurrent = 30 - Number(day.value) + dayToday
             console.log(dayCurrent)
             console.log('30')
