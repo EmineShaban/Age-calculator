@@ -2,8 +2,15 @@
     position: relative;
 } */
 
+body{
+    background-color: #f0f0f0;
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Space Grotesk', sans-serif;} */
+}
 div.main {
-    background: lightgrey;
+    background-color: white;
+    border-radius: 15px;
+    border-bottom-right-radius: 100px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -19,12 +26,6 @@ div.input {
 
 }
 
-div.main div {
-    margin: 15px 5px;
-    /* display: flex;
-    flex-direction: column; */
-    font-size: 23px;
-}
 
 div.main div.day {
 
@@ -63,4 +64,44 @@ div.main div.btn {
 div.main div.btn button {
     font-size: 20px;
     padding: 10px 20px;
+}
+
+
+
+
+/* results */
+div.result p{
+    margin: 0;
+}
+#new-years{
+    font-size: 80px;
+    color: #864cff;
+    font-weight: 800;
+}
+
+#new-months{
+    font-size: 80px;
+    color: #864cff;
+    font-weight: bold;
+}
+
+#new-days{
+    font-size: 80px;
+    color: #864cff;
+    font-weight: bold;
+}
+
+p.year-result{
+    font-size: 70px;
+    font-weight: bold;
+}
+
+p.month-result{
+    font-size: 70px;
+    font-weight: bold;
+}
+
+p.days-result{
+    font-size: 70px;
+    font-weight: bold;
 }
