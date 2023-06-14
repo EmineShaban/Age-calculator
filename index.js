@@ -4,6 +4,11 @@ let day = document.getElementById('day')
 let month = document.getElementById('month')
 let year = document.getElementById('year')
 
+let dayNew = document.getElementById('new-days')
+let monthNew = document.getElementById('new-months')
+let yearNew = document.getElementById('new-years')
+
+
 function onClick() {
     console.log(day)
     console.log(month)
@@ -43,8 +48,6 @@ function onClick() {
     } else if (dayToday < Number(day.value)) {
         console.log(monthCurrent)
         monthCurrent -= 1
-        // monthToday-=1
-        // month.value -= 1
         console.log(monthToday)
 
         console.log(monthCurrent)
@@ -88,6 +91,8 @@ function onClick() {
     console.log(monthCurrent)
     console.log(dayCurrent)
 
-
+    dayNew.textContent = dayCurrent
+    monthNew.textContent = monthCurrent
+    yearNew.textContent = yearCurrent
 
 }
