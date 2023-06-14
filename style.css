@@ -1,16 +1,13 @@
-/* section{
-    position: relative;
-} */
-
-body{
+body {
     background-color: #f0f0f0;
     font-family: 'Poppins', sans-serif;
-    /* font-family: 'Space Grotesk', sans-serif;} */
 }
+
 div.main {
     background-color: white;
     border-radius: 15px;
     border-bottom-right-radius: 100px;
+
     position: absolute;
     top: 50%;
     left: 50%;
@@ -23,85 +20,104 @@ div.main {
 div.input {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    padding: 35px 40px;
+
 
 }
 
-
+div.main div.year,
+div.main div.month,
 div.main div.day {
-
     display: flex;
     flex-direction: column;
 }
 
-div.main div.month {
-
-    display: flex;
-    flex-direction: column;
-}
-
-div.main div.year {
-
-    display: flex;
-    flex-direction: column;
-}
 
 div.main div label {
     margin-bottom: 15px;
+    text-transform: uppercase;
+    color: #8c8c8c;
+    margin: 1px;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    font-size: 12px;
+    padding-bottom: 8px;
 }
 
 
 div.main div input {
-    font-size: 17px;
-    padding: 10px 20px;
+    border: 1px #e2e2e2 solid;
+    border-radius: 7px;
+    font-size: 28px;
+    padding: 8px 13px;
     width: 50%;
+    font-weight: 600;
 }
 
-div.main div.btn {
+
+/* button */
+hr{
+    color: #ececec;
+    /* padding-left: 40px; */
+
+    width: 87%;
+    
+}
+/* div.main div.btn {
     display: flex;
     justify-content: center;
 }
-
 div.main div.btn button {
     font-size: 20px;
     padding: 10px 20px;
-}
+} */
 
 
 
 
 /* results */
-div.result p{
-    margin: 0;
+div.result {
+    padding: 35px 40px;
+
 }
-#new-years{
-    font-size: 80px;
+
+div.result p {
+    margin: 0;
+    line-height: 1.1;
+    font-weight: 800;
+    font-style: italic;
+}
+
+#new-years {
+    font-size: 70px;
     color: #864cff;
     font-weight: 800;
 }
 
-#new-months{
-    font-size: 80px;
+#new-months {
+    font-size: 70px;
     color: #864cff;
     font-weight: bold;
 }
 
-#new-days{
-    font-size: 80px;
+#new-days {
+    font-size: 70px;
     color: #864cff;
     font-weight: bold;
 }
 
-p.year-result{
+p.year-result {
     font-size: 70px;
     font-weight: bold;
 }
 
-p.month-result{
+p.month-result {
     font-size: 70px;
     font-weight: bold;
 }
 
-p.days-result{
+p.days-result {
     font-size: 70px;
     font-weight: bold;
 }
