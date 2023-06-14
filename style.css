@@ -63,7 +63,6 @@ div.main div.btn{
 }
 hr{
     color: #ececec;
-    /* padding-left: 40px; */
 
     width: 87%;
     
@@ -71,8 +70,8 @@ hr{
 
 div.main div.btn img{
 width: 100%;
-    /* display: grid;
-    grid-template-columns: 1fr 0.1fr; */
+
+
 }
 div.main div.btn button {
     width: 15%;
